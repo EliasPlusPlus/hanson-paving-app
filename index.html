@@ -18,6 +18,8 @@
   a.btn { display:block; background:var(--brand); color:#fff; text-decoration:none; font-weight:700; font-size:19px;
           padding:17px; border-radius:16px; }
   a.btn:active { transform:scale(.98); }
+  a.btn + a.btn { margin-top:12px; }
+  a.btn.alt { background:transparent; color:var(--text); box-shadow: inset 0 0 0 2px var(--muted); }
   ol { text-align:left; color:var(--muted); font-size:15px; padding-left:20px; margin:24px 0 0; }
   small { display:block; margin-top:18px; color:var(--muted); font-size:13px; }
 </style>
@@ -27,13 +29,14 @@
     <img src="icon-512.png" alt="Hanson Paving icon">
     <h1>Hanson Paving</h1>
     <p>Crew app · Version 1.0</p>
-    <a class="btn" href="itms-services://?action=download-manifest&amp;url=https://eliasplusplus.github.io/hanson-paving-app/manifest.plist">Install</a>
+    <a class="btn" href="itms-services://?action=download-manifest&amp;url=https://eliasplusplus.github.io/hanson-paving-app/manifest-15promax.plist">Install · iPhone 15 Pro Max</a>
+    <a class="btn alt" href="itms-services://?action=download-manifest&amp;url=https://eliasplusplus.github.io/hanson-paving-app/manifest-phone2.plist">Install · Second iPhone</a>
     <ol>
       <li>Open this page in <b>Safari</b> on your iPhone.</li>
-      <li>Tap <b>Install</b>, then <b>Install</b> again in the pop-up.</li>
+      <li>Tap the <b>Install</b> button for <b>your</b> phone, then <b>Install</b> again in the pop-up.</li>
       <li>Go to your Home Screen and wait for the icon to finish loading.</li>
     </ol>
-    <small>Only works on iPhones registered to this build's certificate.</small>
+    <small>Each button only works on the phone it was signed for.</small>
   </div>
 </body>
 </html>
